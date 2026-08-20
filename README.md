@@ -1,108 +1,74 @@
-# superstore_sales_analysis
-## PROJECT GOAL
-The project aims to analyze the online sales dataset of a superstore in the United States to understand which customer segments, product categories and regions they should target or avoid.  The project also performed cohort analysis to identify customer retention rate over time and therefore propose targeted marketing strategy to increase customer lifetime value and profitability.
+# RETAIL SALES PERFORMANCE ANALYSIS
+## BUSINESS PROBLEM
+The project analyzed the sales performance of a global superstore in the United States from 2014 to 2017. The main objective is to answer the key business question: Which are the main drivers of sales and profit during the past four years?
+Depending on the objective, the analysis is divided into four main parts:
+- Sales Performance Analysis: Analyze the annual/ quarterly/ monthly sales trend over time.
+- Segment Analysis: Analyze the sales performance across different customer segments.
+- Product Analysis: Analyze the sales performance across different product categories.
+- Geographical Analysis: Analyze the sales performance across different geographical locations.
 
 ## DATASET OVERVIEW
-The dataset contains 9994 transactional records  in the period of 2014-2017 and has 21 fields in total: 
-Row ID; Order ID; Order Date; Ship Date; Ship Mode; Customer ID; Customer Name; Segment; Country; City; State; Postal Code; Region; Product ID; Category ; Sub-Category; Product Name; Sales; Quantity; Discount; Profit 
+The dataset contains 9,994 retail transactions collected between 2014 and 2017, including customer, product, sales, shipping and geographic information across 21 variables.
+Key data domains include:
+- Order and shipping details
+- Customer information
+- Product hierarchy (Category & Sub-Category)
+- Geographic dimensions (Region, State, City)
+- Financial metrics (Sales, Quantity, Discount, Profit)
+The dataset source: Superstore Sales Dataset (Kaggle)
 
-Dataset Source: Superstore Sales - Kaggle: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+## DATA CLEANING & PREPARATION
+Before analysis, the dataset was cleaned and validated using Excel and SQL to ensure data quality.
+- Handling missing values.
+- Removing duplicate records.
+- Standardizing data formats.
+- Validating abnormal values.
 
-## DATA CLEANING
-There are 4 steps in cleaning the data using Excel and SQL:
+## ANALYSIS & KEY FINDINGS
+### Sales Performance Analysis
+<img width="602" height="339" alt="Sales Performance Dashboard" src="https://github.com/user-attachments/assets/f7752c72-7cb7-43f2-b645-1cc71c94ba48" />
 
-- Check missing values.
+Key findings:
+Sales and profit increased consistently from 2014 - 2017, indicating sustainable business growth.
+Revenue peaked in Q4, particularly in November.
 
-- Check duplicate records.
+### Customer Segment Analysis
+<img width="602" height="336" alt="Customer Segment Analysis" src="https://github.com/user-attachments/assets/9818b4a5-75c0-40b5-91f4-eb4e26591d4e" />
 
-- Check the standard format.
+Key findings:
+The consumer segment accounts for more than 50% of the total sales.
+Corporate customers generate higher average revenue per customer.
+Customer average purchase frequency is 6 times.
 
-- Check abnormal values.
+### Category Analysis
+<img width="602" height="337" alt="product category analysis" src="https://github.com/user-attachments/assets/98d7ef0c-29e6-458b-931d-c0f97a23f84d" />
 
-## EXPLORATORY DATA ANALYSIS (EDA)
-### 1. Sales Performance Analysis
-Key Metrics: Sales, Profit, Orders, Average Order Value (AOV), Gross Margin (%)
-<img width="602" height="333" alt="Sales Analysis" src="https://github.com/user-attachments/assets/8740992d-9d94-452d-bf5f-257405b9ef9a" />
+Key findings:
+Technology is the highest-performing category in both sales and profit.
+Furniture generates strong sales but contributes relatively low profit.
+Copies and Phones are the highest-profit sub-categories.
+Tables and Bookcases are consistently unprofitable product sub-categories.
 
-Key Findings:
-- Sales and profit increased consistently from 2014 to 2017, indicating sustained business growth.
-- Revenue peaked in Q4, particularly in November.
-- Although 2014 generated higher sales than 2015, its profit was lower.
+### Geographical analysis
+<img width="602" height="337" alt="geographical analysis" src="https://github.com/user-attachments/assets/2b10cb87-e013-4a2e-a894-9f1cd4cbcba5" />
 
-Business Insights:
-- The business has maintained a strong and steady growth trajectory.
-- Q4 represents the most critical sales season, driven by major shopping events such as Black Friday, Cyber Monday, and the Christmas holiday season.
-- The lower profitability in 2014 suggests that profit margins were not fully optimized, potentially due to aggressive discounting strategies or an unfavorable product mix.
+Key findings:
+The West and East regions contribute the largest share of both sales and profit.
+California and New York are the most profitable markets.
+Texas, Ohio, Pennsylvania generate negative profits.
 
-### 2. Customer Analysis
-Key Metrics: Total Customers, Average Purchase Frequency, Average Revenue per Customer, Repeat Purchase Rate
-<img width="602" height="328" alt="Segment Analysis" src="https://github.com/user-attachments/assets/79fd8a8f-b825-420d-af47-a9889d2a8cf8" /> <img width="602" height="336" alt="Customer Analysis" src="https://github.com/user-attachments/assets/ac5897be-ed42-4086-b1f3-7acc39388c21" />
+## INSIGHTS & RECOMMENDATIONS
+### INSIGHTS:
+- Q4 is the most critical sales season, driven by major shopping events such as Black Friday, Cyber Monday, and the Christmas holiday season.
+- The Consumer segment serves as the primary revenue driver, while Corporate customers demonstrate a higher Customer Lifetime Value (CLV).
+- Revenue and profitability are concentrated in several key geographic markets such as California and NewYork. On the other hand, certain regions achieve strong sales but deliver weak profit margins, indicating operational inefficiencies.
+- Technology serves as the primary driver of business growth, while Furniture negatively impacts overall profitability, likely due to high discount rates or elevated operating costs.
 
-Key Findings:
-- The Consumer segment accounts for more than 50% of the total customer base.
-- Corporate customers generate higher average revenue per customer.
-- Customers purchase an average of 6.32 times, with over half making 6–10 purchases. Purchase frequency is relatively consistent across customer segments.
-- Revenue is well distributed across customers rather than relying heavily on a small group of high-value buyers.
-
-Business Insights:
-- The Consumer segment serves as the primary revenue driver due to its large customer base.
-- Corporate customers demonstrate a higher Customer Lifetime Value (CLV).
-- The business faces relatively low revenue concentration risk, as sales are not overly dependent on a few major customers.
-
-### 3. Regional Analysis
-Key Metrics: Sales, Profit
-
-<img width="602" height="336" alt="Region Analysis" src="https://github.com/user-attachments/assets/724ad866-7a45-4e06-b60e-df12b980bb5e" />
-
-Key Findings:
-- The West and East regions contribute the largest share of both sales and profit.
-- California and New York are the most profitable markets.
-- Texas, Ohio, Philadelphia, and Houston generate low or even negative profits.
-
-Business Insights:
-- Revenue and profitability are concentrated in several key geographic markets.
-- Certain regions achieve strong sales but deliver weak profit margins, indicating operational inefficiencies.
-
-### 4. Product Analysis
-Key Metrics: Sales, Profit
-
-<img width="602" height="336" alt="Category Analysis" src="https://github.com/user-attachments/assets/4f75f16d-2ca9-45ff-aae3-75b899fa062e" />
-
-Key Findings
-- Technology is the highest-performing category in both sales and profit.
-- Furniture generates strong sales but contributes relatively low profit.
-- Tables and Bookcases are consistently unprofitable product subcategories.
-- Canon ImageCLASS is the best-selling product.
-
-Business Insights
-- Technology serves as the primary driver of business growth.
-- Furniture negatively impacts overall profitability, likely due to high discount rates or elevated operating costs.
-
-## CUSTOMER RETENTION ANALYSIS USING COHORT ANALYSIS
-Key Metrics: Customer Retention Rate, Cohort Size
-
-<img width="602" height="338" alt="Cohort Analysis" src="https://github.com/user-attachments/assets/39b6f173-8687-4cc7-9f80-5d9bb6b9b5c8" />
-
-Key Findings
-- Customer retention rate declines sharply after the first month.
-- Retention rate remains low but relatively stable thereafter.
-- The March cohort acquired the highest number of new customers.
-
-Business Insights
-- The largest customer drop-off occurs immediately after the first purchase.
-- Customers tend to make purchases on an as-needed basis rather than following a recurring buying pattern.
-- Marketing campaigns launched in early spring appear to be more effective at acquiring new customers.
-
-## RECOMMENDATIONS
-Based on the analysis, the company should focus on improving both profitability and customer retention while leveraging its strongest growth drivers. The key strategic recommendations are:
-- Capitalize on Q4 demand by increasing marketing investment, optimizing inventory planning, and preparing promotional campaigns ahead of the peak shopping season.
-- Improve profit margins by reviewing discount policies, monitoring Gross Margin across product categories, and optimizing pricing strategies.
+### RECOMMENDATIONS:
+Based on the analysis, the company should focus on improving profitability while leveraging its strongest growth drivers. The key strategic recommendations are:
+- Capitalize on Q4 demand by increasing marketing investment, optimizing inventory planning, and preparing promotional campaigns ahead of the peak shopping season..
 - Expand the Consumer segment while strengthening relationships with high-value Corporate customers through tailored pricing, long-term contracts, and dedicated B2B programs.
-- Increase customer retention by implementing first-to-second purchase campaigns within the first 30 days, supported by automated email, SMS, and voucher incentives, as well as a structured loyalty program.
 - Invest in high-performing markets and products, particularly California, New York, and the Technology category, while addressing operational inefficiencies in low-profit regions such as Texas and Ohio.
-- Optimize the product portfolio by reassessing pricing and promotional strategies for Furniture and considering the repositioning or discontinuation of persistently unprofitable products.
-- Leverage data-driven decision making by analyzing successful customer acquisition campaigns (such as the March cohort) and continuously monitoring customer behavior, profitability, and retention metrics to drive sustainable long-term growth.
-
-Overall, these initiatives aim to increase Customer Lifetime Value (CLV), improve operational efficiency, strengthen profitability, and support sustainable business growth.
-
+- Improve profit margins by reviewing discount policies, monitoring Gross Margin across product categories, and optimizing pricing strategies.
+Optimize the product portfolio by reassessing pricing and promotional strategies for Furniture and considering the repositioning or discontinuation of persistently unprofitable products.
 
