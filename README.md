@@ -1,11 +1,11 @@
 # RETAIL SALES PERFORMANCE ANALYSIS
 ## BUSINESS PROBLEM
-The project analyzed the sales performance of a global superstore in the United States from 2014 to 2017. The main objective is to answer the key business question: Which are the main drivers of sales and profit during the past four years?
-Depending on the objective, the analysis is divided into four main parts:
-- Sales Performance Analysis: Analyze the annual/ quarterly/ monthly sales trend over time.
-- Segment Analysis: Analyze the sales performance across different customer segments.
-- Product Analysis: Analyze the sales performance across different product categories.
-- Geographical Analysis: Analyze the sales performance across different geographical locations.
+The project analyzed the sales performance of a global superstore in the United States from 2014 to 2017. What are the main drivers of sales and profit during the past four years?
+Depending on the objective, the analysis is broken into four main questions to answer:
+- What is the annual/ monthly sales trend over the past 4 years?
+- Which customer segment drove the most value?
+- Which product categories and regions contributed most to the revenue and profit?
+- What negatively impacted the overall profit margin?
 
 ## DATASET OVERVIEW
 The dataset contains 9,994 retail transactions collected between 2014 and 2017, including customer, product, sales, shipping and geographic information across 21 variables.
@@ -15,6 +15,7 @@ Key data domains include:
 - Product hierarchy (Category & Sub-Category)
 - Geographic dimensions (Region, State, City)
 - Financial metrics (Sales, Quantity, Discount, Profit)
+
 The dataset source: Superstore Sales Dataset (Kaggle)
 
 ## DATA CLEANING & PREPARATION
