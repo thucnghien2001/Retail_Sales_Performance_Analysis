@@ -1,6 +1,7 @@
 # RETAIL SALES PERFORMANCE ANALYSIS
 ## BUSINESS PROBLEM
 The project analyzed the sales performance of a global superstore in the United States from 2014 to 2017. The objective of this analysis is to answer the main question: What are the main drivers of sales and profit during the past four years?
+
 Depending on the objective, the analysis is broken into four main questions to answer:
 - What is the annual/ monthly sales trend over the past 4 years?
 - Which customer segment drove the most value?
