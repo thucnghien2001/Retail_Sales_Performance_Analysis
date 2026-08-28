@@ -64,6 +64,7 @@ Some key findings that are extracted from the analysis:
 This section analyzes sales performance by category in order to find the top-performing category/ sub-category/ product and identify the underlying reason that leads to low profit in some of the categories.
 
 In this section, I analyze Sales and Profit by Category, Discount and Profit correlation by category, Top 10 highest-profit sub-categories and Top 10 lowest-profit sub-categories.
+
 <img width="602" height="334" alt="Category_Performance" src="https://github.com/user-attachments/assets/71108843-61e3-4cb2-a1fb-0e7c19c5f558" />
 
 Some key insights that are extracted from this analysis:
