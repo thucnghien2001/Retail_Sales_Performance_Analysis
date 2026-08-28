@@ -16,92 +16,18 @@ A U.S. retail superstore is selling different products across various customer s
 
 ## DATASET REVIEW
 This dataset contains 9,994 line-item transactions between 2014-2017 across 5,009 orders for a US retail store, capturing shipping, customer, geography, product information as well as sales metrics.
+
 The dataset source: Superstore Sales Dataset (Kaggle)
-
-No
-Column
-What it means
-1
-Row_ID
-Unique row reference
-2
-Order_ID
-Unique order reference
-3
-Order_Date
-Date when the order was placed
-4
-Ship_Date
-Date when the order was shipped
-5
-Ship_Mode
-Delivery Method (Standard Class, Second Class, First Class, Same Day)
-6
-Customer ID
-Unique customer reference
-7
-Customer Name
-Full name of the customer
-8
-Segment
-Customer classification (Consumer, Corporate, Home Office)
-9
-Country
-Country of shipping destination (The United States)
-10
-City
-Delivery City 
-11
-State
-Delivery State
-12
-Postal Code
-5-digit delivery ZIP/postal code
-13
-Region
-Regional sales territory (South, West, Central, East)
-14
-Product ID
-Unique item SKU code
-15
-Category
-Broad product group
-16
-Sub Category
-Specific product group
-17
-Product Name
-Full description and title of the item sold
-18
-Sales
-Gross sales revenue generated for the line item (in USD)
-19
-Quantity
-Number of product units purchased for the line item.
-20
-Discount
-Discount percentage applied to the line item (%)
-21
-Profit
-Net financial gain or loss generated from the line item.
-
 
 ## DATA CLEANING & PREPARATION
 The dataset needs to be cleaned and validated to ensure data quality before use for analysis and reporting. In this case, I use Excel for data cleaning to ensure the accuracy and consistency of the dataset. 
-No
-Checklist
-1
-No fully blank rows
-2
-No missing values
-3
-No duplicate rows 
-4
-Date columns are recognized as date
-5
-Sales, quantity, discount and profit are formatted correctly.
-6
-Customer/Region/Product spelling is consistent and correct
+Checklist:
+1. No fully blank rows
+2. No missing values
+3. No duplicate rows 
+4. Date columns are recognized as date
+5. Sales, quantity, discount and profit are formatted correctly.
+6. Customer/Region/Product spelling is consistent and correct
 
 ## DATA ANALYSIS & VISUALIZATION
 Based on the main questions that are mentioned above, I can divide the analysis into four parts:
