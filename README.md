@@ -1,76 +1,161 @@
-# RETAIL SALES PERFORMANCE ANALYSIS
-## BUSINESS PROBLEM
-The project analyzed the sales performance of a global superstore in the United States from 2014 to 2017. The objective of this analysis is to answer the main question: What are the main drivers of sales and profit during the past four years?
+## PROJECT OVERVIEW
+The project conducts an end-to-end sales performance data analytics of a Global superstore in order to discover the key drivers of the business growth and solve the root cause of decline in profit margin to help improve the overall sales performance.
+The project is divided into 4 main parts:
+- Business Scenario
+- Dataset Review
+- Data Cleaning & Transformation
+- Data Analysis & Visualization
+- Recommendations
 
-Depending on the objective, the analysis is broken into four main questions to answer:
-- What was the annual/ monthly sales trend over the past 4 years?
-- Which customer segment drove the most value?
-- Which product categories and regions contributed most to the revenue and profit?
-- What negatively impacted the overall profit margin?
+## BUSINESS SCENARIO
+A U.S. retail superstore is selling different products across various customer segments and regions. Based on the sales performance of the last 4 years, the manager wants to know what are the key drivers of business growth and identify the main factors that result in the decline in profit margin. So the analysis need to answer the following questions:
+- What is the trend and seasonality of the business over the last 4 years?
+- Which customer segment drives the most value?
+- Which product category and region contribute most to the overall sales and profit?
+- What negatively impacts the overall profit margin?
 
-## DATASET OVERVIEW
-The dataset contains 9,994 retail transactions collected between 2014 and 2017, including customer, product, sales, shipping and geographic information across 21 variables.
-Key data domains include:
-- Order and shipping details
-- Customer information
-- Product hierarchy (Category & Sub-Category)
-- Geographic dimensions (Region, State, City)
-- Financial metrics (Sales, Quantity, Discount, Profit)
-
+## DATASET REVIEW
+This dataset contains 9,994 line-item transactions between 2014-2017 across 5,009 orders for a US retail store, capturing shipping, customer, geography, product information as well as sales metrics.
 The dataset source: Superstore Sales Dataset (Kaggle)
 
+No
+Column
+What it means
+1
+Row_ID
+Unique row reference
+2
+Order_ID
+Unique order reference
+3
+Order_Date
+Date when the order was placed
+4
+Ship_Date
+Date when the order was shipped
+5
+Ship_Mode
+Delivery Method (Standard Class, Second Class, First Class, Same Day)
+6
+Customer ID
+Unique customer reference
+7
+Customer Name
+Full name of the customer
+8
+Segment
+Customer classification (Consumer, Corporate, Home Office)
+9
+Country
+Country of shipping destination (The United States)
+10
+City
+Delivery City 
+11
+State
+Delivery State
+12
+Postal Code
+5-digit delivery ZIP/postal code
+13
+Region
+Regional sales territory (South, West, Central, East)
+14
+Product ID
+Unique item SKU code
+15
+Category
+Broad product group
+16
+Sub Category
+Specific product group
+17
+Product Name
+Full description and title of the item sold
+18
+Sales
+Gross sales revenue generated for the line item (in USD)
+19
+Quantity
+Number of product units purchased for the line item.
+20
+Discount
+Discount percentage applied to the line item (%)
+21
+Profit
+Net financial gain or loss generated from the line item.
+
+
 ## DATA CLEANING & PREPARATION
-Before analysis, the dataset was cleaned and validated using Excel and SQL to ensure data quality.
-- Handling missing values.
-- Removing duplicate records.
-- Standardizing data formats.
-- Validating abnormal values.
+The dataset needs to be cleaned and validated to ensure data quality before use for analysis and reporting. In this case, I use Excel for data cleaning to ensure the accuracy and consistency of the dataset. 
+No
+Checklist
+1
+No fully blank rows
+2
+No missing values
+3
+No duplicate rows 
+4
+Date columns are recognized as date
+5
+Sales, quantity, discount and profit are formatted correctly.
+6
+Customer/Region/Product spelling is consistent and correct
 
-## ANALYSIS & KEY FINDINGS
-### Sales Performance Analysis
-<img width="602" height="339" alt="Sales Performance Dashboard" src="https://github.com/user-attachments/assets/f7752c72-7cb7-43f2-b645-1cc71c94ba48" />
+## DATA ANALYSIS & VISUALIZATION
+Based on the main questions that are mentioned above, I can divide the analysis into four parts:
+- Sales Performance Overview
+- Segment Performance Analysis
+- Category Part-to-Whole Analysis
+- Region Part-to-Whole Analysis
 
-Key findings:
-- Sales and profit increased consistently from 2014 - 2017, indicating sustainable business growth.
-- Revenue peaked in Q4, particularly in November.
+### Sales Performance Overview
+This section analyzes the sales performance over the last 4 years to track trends and define the seasonality in the sales data.
+First I calculate and represent the main KPIs: Total Sales, Total Profit, Profit Margin, Total Orders, Average Order Value to give a big picture of the overall business performance, using DAX formulas for specific calculations.
+Then I use column charts to represent the yearly/quarterly/monthly revenue trend.
+<img width="601" height="334" alt="Executive Overview" src="https://github.com/user-attachments/assets/617c103e-30c2-479e-9a0a-10491d797cda" />
 
-### Customer Segment Analysis
-<img width="602" height="336" alt="Customer Segment Analysis" src="https://github.com/user-attachments/assets/9818b4a5-75c0-40b5-91f4-eb4e26591d4e" />
+Some key insights that are extracted from this analysis:
+The revenue and profit increased consistently in the period of 2014 - 2017, except for the revenue in 2015 which decreased. This indicates sustainable business growth.
+Quarter 4 is the most critical sales season and November is the best month for sales, which is reasonable because of major shopping events such as Black Friday, Cyber Monday and Christmas holiday.
 
-Key findings:
-- The consumer segment accounts for more than 50% of the total sales.
-- Corporate customers generate higher average revenue per customer.
-- Customer average purchase frequency is 6 times.
+### Segment Performance Analysis
+This section analyzes and compares the performance of different customer segments to identify the contribution of the customer segment to the business.
+First I calculate and represent the main KPIs: Total Customers, Revenue per Customer, Average Purchase Frequency, Repeat Purchase Rate, Top 10% Customer RevenuênConcentration.
+Then I analyzed Revenue by Segment, Revenue per Customer by Segment, Purchase Frequency, Top 5 customers by Revenue, Top 5 customers by Profit.
+<img width="601" height="337" alt="Segment_Performance" src="https://github.com/user-attachments/assets/6f91f9a0-efee-4c89-a138-31e919ee738c" />
 
-### Category Analysis
-<img width="602" height="337" alt="product category analysis" src="https://github.com/user-attachments/assets/98d7ef0c-29e6-458b-931d-c0f97a23f84d" />
+Some key findings that are extracted from the analysis:
+The consumer segment is the main revenue driver of the business, which accounts for more than 50% of the total revenue.
+On the other hand, the corporate segment has the highest revenue per customer, which means corporate customers generate the most value.
 
-Key findings:
-- Technology is the highest-performing category in both sales and profit.
-- Furniture generates strong sales but contributes relatively low profit.
-- Copies and Phones are the highest-profit sub-categories.
-- Tables and Bookcases are consistently unprofitable product sub-categories.
+### Category Performance Analysis
+This section analyzes sales performance by category in order to find the top-performing category/ sub-category/ product and identify the underlying reason that leads to low profit in some of the categories.
+In this section, I analyze Sales and Profit by Category, Discount and Profit correlation by category, Top 10 highest-profit sub-categories and Top 10 lowest-profit sub-categories.
+<img width="602" height="334" alt="Category_Performance" src="https://github.com/user-attachments/assets/71108843-61e3-4cb2-a1fb-0e7c19c5f558" />
 
-### Geographical analysis
-<img width="602" height="337" alt="geographical analysis" src="https://github.com/user-attachments/assets/2b10cb87-e013-4a2e-a894-9f1cd4cbcba5" />
+Some key insights that are extracted from this analysis:
+Technology is the best-performing category in terms of sales and profit, which means Technology is the main category that drives the business growth. Furniture ranks second in terms of sales but generates relatively low profit (0.02M), which may indicate the ineffective discount policy on this category. In order to find the root cause of this problem, I find the correlation between Discount and Profit by each category. The result shows that Furniture is the highest discount category which decreases profit in this category.
+Regarding sub-category, Copies and Phones are the highest-profit, while Tables and Bookcases are consistently unprofitable sub-categories.
+In terms of sales over time, Technology is the fastest-growing category over the years while Furniture maintains consistent sales.
 
-Key findings:
-- The West and East regions contribute the largest share of both sales and profit.
-- California and New York are the most profitable markets.
-- Texas, Ohio, Pennsylvania generate negative profits.
+### Regional Performance Analysis
+This section analyzes the sales performance by region in order to identify the importance of each region to the business. 
+In this section, I analyze Sales by Region, Top 5 highest-profit states, Top 5 lowest-profit states Shipping Mode and Profit correlation. 
+<img width="601" height="339" alt="Region_Performance" src="https://github.com/user-attachments/assets/bffb7b02-6910-4a8f-83c8-1b5c9c33bf2a" />
 
-## INSIGHTS & RECOMMENDATIONS
-### INSIGHTS:
-- Q4 is the most critical sales season, driven by major shopping events such as Black Friday, Cyber Monday, and the Christmas holiday season.
-- The Consumer segment serves as the primary revenue driver, while Corporate customers demonstrate a higher Customer Lifetime Value (CLV).
-- Revenue and profitability are concentrated in several key geographic markets such as California and NewYork. On the other hand, certain regions achieve strong sales but deliver weak profit margins, indicating operational inefficiencies.
-- Technology serves as the primary driver of business growth, while Furniture negatively impacts overall profitability, likely due to high discount rates or elevated operating costs.
+Some key insights from the analysis:
+The West and the East are two main regions that generate the highest revenue and profit.
+Central has the lowest profit margin. This is due to the high discount policy in this region where the average discount rate is ~24%, 1,5 times the average discount rate.
+On the state-level, California and New York are the most profitable markets, while Texas, Ohio and Pennsylvania generate negative profits. This is likely due to the high operational costs in these areas, which needs further investigation. 
+.
+## Recommendations
+- Based on the findings, I propose some strategic recommendations in order to improve the sales performance of the business:
+- Capitalize on Q4 demand by increasing marketing investment and optimizing inventory planning ahead of the peak shopping season to achieve the best sales performance during this period.
+- Expand the consumer segment while strengthening relationships with high-value corporate customers through tailored pricing, long-term contracts, and dedicated B2B programs.
+- Invest in high-performing markets and products, particularly California, New York and Technology category, while addressing operational inefficiencies in low-profit regions such as Texas and Ohio.
+- Optimize the product portfolio by reassessing pricing and promotional strategies for Furniture and considering the repositioning or discontinuation of persistently unprofitable products.
 
-### RECOMMENDATIONS:
-Based on the analysis, the company should focus on improving profitability while leveraging its strongest growth drivers. The key strategic recommendations are:
-- Capitalize on Q4 demand by increasing marketing investment, optimizing inventory planning, and preparing promotional campaigns ahead of the peak shopping season..
-- Expand the Consumer segment while strengthening relationships with high-value Corporate customers through tailored pricing, long-term contracts, and dedicated B2B programs.
-- Invest in high-performing markets and products, particularly California, New York, and the Technology category, while addressing operational inefficiencies in low-profit regions such as Texas and Ohio.
-- Improve profit margins by reviewing discount policies, monitoring Gross Margin across product categories, and optimizing pricing strategies.
-Optimize the product portfolio by reassessing pricing and promotional strategies for Furniture and considering the repositioning or discontinuation of persistently unprofitable products.
+
 
