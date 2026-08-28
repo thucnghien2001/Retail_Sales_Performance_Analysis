@@ -42,6 +42,7 @@ This section analyzes the sales performance over the last 4 years to track trend
 First I calculate and represent the main KPIs: Total Sales, Total Profit, Profit Margin, Total Orders, Average Order Value to give a big picture of the overall business performance, using DAX formulas for specific calculations.
 
 Then I use column charts to represent the yearly/quarterly/monthly revenue trend.
+
 <img width="601" height="334" alt="Executive Overview" src="https://github.com/user-attachments/assets/617c103e-30c2-479e-9a0a-10491d797cda" />
 
 Some key insights that are extracted from this analysis:
@@ -54,6 +55,7 @@ This section analyzes and compares the performance of different customer segment
 First I calculate and represent the main KPIs: Total Customers, Revenue per Customer, Average Purchase Frequency, Repeat Purchase Rate, Top 10% Customer RevenuênConcentration.
 
 Then I analyzed Revenue by Segment, Revenue per Customer by Segment, Purchase Frequency, Top 5 customers by Revenue, Top 5 customers by Profit.
+
 <img width="601" height="337" alt="Segment_Performance" src="https://github.com/user-attachments/assets/6f91f9a0-efee-4c89-a138-31e919ee738c" />
 
 Some key findings that are extracted from the analysis:
@@ -76,6 +78,7 @@ Some key insights that are extracted from this analysis:
 This section analyzes the sales performance by region in order to identify the importance of each region to the business. 
 
 In this section, I analyze Sales by Region, Top 5 highest-profit states, Top 5 lowest-profit states Shipping Mode and Profit correlation. 
+
 <img width="601" height="339" alt="Region_Performance" src="https://github.com/user-attachments/assets/bffb7b02-6910-4a8f-83c8-1b5c9c33bf2a" />
 
 Some key insights from the analysis:
