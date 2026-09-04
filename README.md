@@ -37,6 +37,7 @@ Analytical approach: This is a descriptive and diagnostic analysis rather than a
 
 ### 1. Sales performance 
 <img width="601" height="339" alt="Executive Overview Page" src="https://github.com/user-attachments/assets/05cac6e6-7bc6-4174-90ad-e89e4a4348b2" />
+
 Key findings: 
 - Revenue increased consistently from 2014 to 2017 except for 2015 which slightly decreased. This indicates sustainable business growth.
 - Quarter 4 is the most critical sales season and November is the peak sales month.
@@ -46,6 +47,7 @@ Key findings:
 
 ### 2. Product Analysis
 <img width="601" height="335" alt="Product Analysis Page" src="https://github.com/user-attachments/assets/0da65f3d-c5fa-433b-9f7e-0f11756333ff" />
+
 Key findings:
 - Technology leads in both sales ($0.84M) and profit ($0.15M).
 - Furniture ranks second in revenue ($0.74M) but generated relatively low profit (0.02M).
@@ -54,6 +56,7 @@ Key findings:
 
 ### 3. Segment & Region Analysis
 <img width="601" height="336" alt="Segment and Region Analysis Page" src="https://github.com/user-attachments/assets/f02c342d-2aa8-47f1-a495-0c84de28f383" />
+
 Key findings:
 - Consumer leads in both sales and profit, but Corporate has the highest revenue per customer.
 - The West ($0.75M) and the East ($0.68M) are the top two regions.
