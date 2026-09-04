@@ -1,4 +1,4 @@
-# Project Overview
+## Project Overview
 The project conducts an end-to-end analysis of sales transaction data of a global superstore in order to discover key drivers of business growth and identify the root cause of profit loss using SQL and Power BI.
 
 The structure of the project consists of 5 sections:
