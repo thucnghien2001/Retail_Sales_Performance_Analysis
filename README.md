@@ -1,5 +1,6 @@
 # Project Overview
 The project conducts an end-to-end analysis of sales transaction data of a global superstore in order to discover key drivers of business growth and identify the root cause of profit loss using SQL and Power BI.
+
 The structure of the project consists of 5 sections:
 1. Business Problem
 2. Dataset Overview
@@ -9,14 +10,18 @@ The structure of the project consists of 5 sections:
    
 ## Business Problem 
 Context: A U.S. retail superstore is selling different products across various customer segments and regions.
+
 Problem Statement: The sales manager wants to know what was actually driving its sales performance and what was negatively impacting the profit margin.
+
 Objective: 
 - Understand the trend and seasonality that may have in our business
 - Identify the main customer segment that drives the most value
 - Identify the top performer and bottom performer by product category and region
 - Investigate the main factors reducing overall profit. 
+
 Approach: 
 9994 transaction records were profiled and analyzed using Excel and SQL, covering data quality checks, exploratory data analysis, descriptive analysis, diagnosis analysis - then rebuilt as a 4-page interactive Power BI dashboard with custom DAX measures for ongoing business reporting.
+
 Outcome:
 The analysis demonstrates that there was trend and seasonality pattern in the business; determined consumer as the main revenue driver while corporate with highest customer value;  and identified technology and West region as the strongest performers - translated into 5 prioritized recommendations across inventory, pricing, operations and marketing.
 
