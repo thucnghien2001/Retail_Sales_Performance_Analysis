@@ -57,7 +57,8 @@ Key findings:
 - Technology leads in both sales ($0.84M) and profit ($0.15M).
 - Furniture ranks second in revenue ($0.74M) but generated relatively low profit (0.02M).
 - Office Supplies fall behind in revenue ($0.72M) but generated higher profit than Furniture ($0.12M)
-- Copiers is the best-performer among 12 sub-categories ($56K), followed by Phone ($45K). Bookcases (-18K) and Tables (-3K) are the two under-performing sub-categories with minor profit.
+- Copiers is the best-performer among 12 sub-categories ($56K), followed by Phone ($45K).
+- Bookcases (-18K) and Tables (-3K) are the two under-performing sub-categories with minor profit.
 
 ### 3. Segment & Region Analysis
 <img width="601" height="336" alt="Segment and Region Analysis Page" src="https://github.com/user-attachments/assets/f02c342d-2aa8-47f1-a495-0c84de28f383" />
@@ -66,7 +67,8 @@ Key findings:
 - Consumer leads in both sales and profit, but Corporate has the highest revenue per customer.
 - The West ($0.75M) and the East ($0.68M) are the top two regions.
 - The Central ($0.50M) and the South ($0.39M) are smaller markets, with the South being the most underserved.
-- California ($76M) and NewYork ($74M) are the two core markets, while there are several unprofitable states like Texas ($-26M) and Ohio ($-17M).
+- California ($76M) and NewYork ($74M) are the two core markets.
+- There are several unprofitable states like Texas ($-26M) and Ohio ($-17M).
 
 ## Recommendations
 - Capitalize on Quarter 4 demand by increasing marketing investment and optimizing inventory planning ahead of the peak shopping season.
