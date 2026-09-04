@@ -68,7 +68,7 @@ Key findings:
 - The West ($0.75M) and the East ($0.68M) are the top two regions.
 - The Central ($0.50M) and the South ($0.39M) are smaller markets, with the South being the most underserved.
 - California ($76M) and NewYork ($74M) are the two core markets.
-- There are several unprofitable states like Texas ($-26M) and Ohio ($-17M).
+- There are several unprofitable states like Texas ($-26M), Ohio ($-17M).
 
 ## Recommendations
 - Capitalize on Quarter 4 demand by increasing marketing investment and optimizing inventory planning ahead of the peak shopping season.
