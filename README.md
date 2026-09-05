@@ -27,6 +27,7 @@ The analysis demonstrates that there was trend and seasonality pattern in the bu
 
 ## Dataset Overview
 The dataset contains 9,994 line-item sales transaction data during the period from 2014 to 2017, capturing shipping, customer, geography, product information and sales metrics. 
+
 The dataset source: Superstore Sales Dataset from Kaggle 
 
 ## Data Quality Check & Data Cleaning
@@ -41,9 +42,9 @@ The dataset source: Superstore Sales Dataset from Kaggle
 Analytical approach: This is a descriptive and diagnostic analysis rather than a predictive one: the goal is to quantify performance by product, segment and region to find top-performer and bottom performers and diagnose the root causes in under-performing product/ region - then visualize the analytical results into a Power BI dashboard to present insights to stakeholders.
 
 ### 1. Sales performance 
-<img width="601" height="339" alt="Executive Overview Page" src="https://github.com/user-attachments/assets/05cac6e6-7bc6-4174-90ad-e89e4a4348b2" />
+<img width="601" height="338" alt="1  Executive Overview" src="https://github.com/user-attachments/assets/63341489-c746-4176-8c9c-26b5b276d08b" />
 
-Key findings: 
+Key findings & Insights
 - Revenue increased consistently from 2014 to 2017 except for 2015 which slightly decreased. This indicates sustainable business growth.
 - Quarter 4 is the most critical sales season and November is the peak sales month.
 - Consumer dominates with over 50% of overall sales, making it the main revenue driver.
@@ -51,19 +52,20 @@ Key findings:
 - Technology is the best-performing category in terms of sales ($0.84M), followed by Furniture ($0.74M) and Office Supplies ($0.72M).
 
 ### 2. Product Analysis
-<img width="601" height="335" alt="Product Analysis Page" src="https://github.com/user-attachments/assets/0da65f3d-c5fa-433b-9f7e-0f11756333ff" />
+<img width="601" height="339" alt="2  Product Analysis" src="https://github.com/user-attachments/assets/ddddfc59-ae40-498a-b39a-b3cc8187015a" />
 
-Key findings:
+Key findings & Insights:
 - Technology leads in both sales ($0.84M) and profit ($0.15M).
 - Furniture ranks second in revenue ($0.74M) but generated relatively low profit (0.02M).
-- Office Supplies fall behind in revenue ($0.72M) but generated higher profit than Furniture ($0.12M)
+- Office Supplies fall behind in revenue ($0.72M) but generated higher profit than Furniture ($0.12M), which is likely to be driven by high discount levels in this segment.
+- The average discount & total profit analysis shows that high discount levels are strongly associated with negative profitability. 
 - Copiers is the best-performer among 12 sub-categories ($56K), followed by Phone ($45K).
 - Bookcases (-18K) and Tables (-3K) are the two under-performing sub-categories with minor profit.
 
 ### 3. Segment & Region Analysis
-<img width="601" height="336" alt="Segment and Region Analysis Page" src="https://github.com/user-attachments/assets/f02c342d-2aa8-47f1-a495-0c84de28f383" />
+<img width="601" height="336" alt="3  Segment and Region Analysis" src="https://github.com/user-attachments/assets/ad863270-3d26-4103-9085-ca3a65f87774" />
 
-Key findings:
+Key findings & Insights:
 - Consumer leads in both sales and profit, but Corporate has the highest revenue per customer.
 - The West ($0.75M) and the East ($0.68M) are the top two regions.
 - The Central ($0.50M) and the South ($0.39M) are smaller markets, with the South being the most underserved.
